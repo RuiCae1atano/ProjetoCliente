@@ -10,4 +10,5 @@
 
 - Tenha por favor em conta para usar a aplicação verifique as dependências, e tenha instalado o .Net 6
 - Para o banco de dados o existe o migrations do .net que pode ser utilizado na biblioteca cliente.infrastructure, caso queira migrar.
-- O banco mdf Cliente.Banco vai anexado. Favor atualizar consoante localização
+- O banco script de criação do banco vai anexado. Favor atualizar consoante localização
+- A api está com o swagger instalado. 
