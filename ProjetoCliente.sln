@@ -15,11 +15,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{9035F41D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.FrontEnd.App", "Client.FrontEnd.App\Client.FrontEnd.App.csproj", "{843C1874-C604-4463-9E6A-DAD7D677C9F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente.IoC", "Cliente.IoC\Cliente.IoC.csproj", "{86095D73-0373-47B9-B845-D810CE9BE4CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cliente.IoC", "Cliente.IoC\Cliente.IoC.csproj", "{86095D73-0373-47B9-B845-D810CE9BE4CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client.Tests", "Client.Tests", "{F7248DAB-6EF7-4907-A28D-97AD302B5FE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testes.Api", "Testes.Api\Testes.Api.csproj", "{EA064A28-5729-4C59-9533-594E7AE47FC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banco", "Banco", "{AE5DB1AA-29E8-458C-A6FE-74D1C0CEE25E}"
+	ProjectSection(SolutionItems) = preProject
+		SqlQuery_1.sql = SqlQuery_1.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
