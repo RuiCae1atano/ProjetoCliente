@@ -1,0 +1,57 @@
+﻿<div class="container">
+    <h3>Cadastrar Cliente</h3>
+    <div id="create-engine">
+        <form id="create-form">
+            <div class="form-row">
+                <div class="col">
+                    <label for="cpf" class="label-inline">CPF:</label>
+                    <input type="text" class="form-control rounded-input" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="378.846.758-55" required>
+                </div>
+                <div class="col">
+                    <label for="nome" class="label-inline">Nome:</label>
+                    <input type="text" class="form-control rounded-input" id="nome" required>
+                </div>
+                <div class="col">
+                    <label for="data-nascimento" class="label-inline">Data de Nascimento:</label>
+                    <input type="date" class="form-control rounded-input" id="datanascimento" required>
+                </div>
+                <div class="col">
+                    <label class="label-inline">Sexo:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="sexo-masculino" name="sexo" value="masculino" required>
+                        <label class="form-check-label" for="sexo-masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="sexo-feminino" name="sexo" value="feminino" required>
+                        <label class="form-check-label" for="sexo-feminino">Feminino</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row mt-3">
+                <div class="col">
+                    <label for="estado" class="label-inline">Estado:</label>
+                    <select class="form-control rounded-input" id="estado" required>
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="cidade" class="label-inline">Cidade:</label>
+                    <select class="form-control rounded-input" id="cidade" required>
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="float-right">
+                        <button type="submit" class="btn btn-primary">Criar</button>
+                        <button type="button" class="btn btn-secondary" id="voltar">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/create-cliente.js" asp-append-version="true"></script>
+}

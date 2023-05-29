@@ -1,0 +1,62 @@
+﻿@model ClienteViewModel
+
+<div class="container">
+    <h3>Editar Cliente</h3>
+    <div id="update-engine">
+        <form id="update-form">
+            <div class="form-row">
+                <div class="col">
+                    <label for="cpf" class="label-inline">CPF:</label>
+                    <input type="text" class="form-control rounded-input" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" value="@Model.Cpf" required>
+                    <input id="idCliente" value="@Model.Id" hidden />
+                </div>
+                <div class="col">
+                    <label for="nome" class="label-inline">Nome:</label>
+                    <input type="text" class="form-control rounded-input" id="nome" value="@Model.Nome" required>
+                </div>
+                <div class="col">
+                    <label for="data-nascimento" class="label-inline">Data de Nascimento:</label>
+                    <input hidden id="nasci" value="@Model.DataNascimento"/>
+                    <input type="date" class="form-control rounded-input" id="data-nascimento" required>
+                </div>
+                <div class="col">
+                    <label class="label-inline">Sexo:</label>
+                    <input id="valorSexo" value="@Model.Sexo" hidden />
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="sexo-masculino" name="sexo" value="masculino" required>
+                        <label class="form-check-label" for="sexo-masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="sexo-feminino" name="sexo" value="feminino" required>
+                        <label class="form-check-label" for="sexo-feminino">Feminino</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row mt-3">
+                <div class="col">
+                    <label for="estado" class="label-inline">Estado:</label>
+                    <select class="form-control rounded-input" id="estado" data-value-estado="@Model.IdEstado" required>
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="cidade" class="label-inline">Cidade:</label>
+                    <select class="form-control rounded-input" id="cidade" data-value-cidade="@Model.IdCidade" required>
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="float-right">
+                        <button type="submit" class="btn btn-primary">Atualizar</button>
+                        <a type="button" class="btn btn-secondary" href="cliente" id="voltar">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/update-cliente.js" asp-append-version="true"></script>
+}
